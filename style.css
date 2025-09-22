@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(Cmglee_Cambridge_Trinity_College_Great_Court.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    overflow-x: hidden; 
+    box-sizing: border-box;
+    
+}
+.first-nav{
+    background-color: rgb(33, 33, 68);
+}
+#navbarid span{
+    display: none;
+}
+.first-nav ul li{
+    list-style: none;
+    margin-right: 10px;
+    font-size: 15px;
+    
+}
+.first-nav ul li a{
+    color: white;
+}
+.first-nav ul li a:hover{
+    color: white;
+}
+.second-nav{
+    background-color: white;
+}
+.second-navbar .nav-logo{
+    margin-left: 25px;
+}
+.second-navbar .nav-logo span{
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    border-right: 1px solid rgb(69, 58, 58);
+}
+.second-navbar{
+    display: flex;
+}
+.second-navbar ul{
+    display: flex;
+    margin-top: 30px;
+}
+.second-navbar ul li{
+    list-style: none;
+    font-size: 25px;
+    margin-right: 40px;
+}
+.second-navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.second-navbar ul li a:hover{
+    transition: .5s;
+    color: rgb(47, 47, 191);
+
+}
+@media screen and (max-width: 900px) {
+   
+    .second-nav{
+        background-color: rgb(255, 255, 255);
+        opacity: 0.5;
+    }
+    .nav-logo{
+        text-align: center;
+    }
+    .second-navbar{
+        flex-direction: column;
+        
+    }
+    .second-navbar ul{
+        flex-direction: column;
+        text-align: right;
+        
+    }
+    .second-navbar ul li{
+        font-size: 25px;
+    }
+    .second-navbar ul li:hover{
+        transition: .5s;
+        border-bottom: 1px solid gray;
+    }
+}
+@media screen and (max-width: 768px) {
+    #navbarid span{
+        display: inline;
+    }
+    .second-nav{
+        background-color: rgb(255, 255, 255);
+        opacity: 0.5;
+    }
+    .nav-logo{
+        text-align: center;
+    }
+    .second-navbar{
+        flex-direction: column;
+        
+    }
+    .second-navbar ul{
+        flex-direction: column;
+        text-align: right;
+        
+    }
+    .second-navbar ul li{
+        font-size: 20px;
+    }
+    .second-navbar ul li:hover{
+        transition: .5s;
+        border-bottom: 1px solid gray;
+    }
+}
+
+.flipped-text{
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: right center;
+    
+}
+@media  screen and (max-width: 768px) {
+    .flipped-text{
+        display: none;
+    }
+    .cambridge{
+    height: 300px;
+}
+}
+.cambridge{
+    height: 700px;
+}
+.cambridge h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-shadow: 2px 3px 2px black;
+}
+.info-part .select-part{
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px gray;
+    z-index: 1;
+}
+@media  screen and (max-width: 992px) {
+    .select-part{
+        width: 80%;
+    }
+    .course{
+        flex-direction: column;
+    }
+    .course select,button{
+        margin-top: 10px;
+        
+    }
+    
+}
+/* infopart */
+.info-part{
+    position: relative;
+}
+.text-part{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: -1;
+}
+.text-part .main-bg{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+@media screen and (max-width: 768px){
+    
+    .text-part .main-bg{
+        grid-template-columns: auto;
+        margin-top: 140px;
+    }
+    .text-part .main-bg .left-side{
+        text-align: center;
+    }
+    .right-side article p{
+        font-size: 10px;
+    }
+    .right-side .image-part{
+        grid-template-columns: auto;
+    }
+    .right-side .text-img .image-part{
+        grid-template-columns: auto;
+    }
+    .text-img{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+
+
+
+
+}
+
+
+
+/* left-side part */
+.right-side{
+    margin-left: 30px;
+}
+.left-side h1{
+    border-bottom: 4px solid black;
+}
+.left-side ul li{
+    list-style: none;
+    margin-top: 7px;
+}
+.left-side  a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    
+}
+.left-side a:hover{
+    transition: .8s;
+    color: blue;
+}
+.left-side button{
+    margin-top: 10px;
+    width: 280px;
+    height: auto;
+}
+
+/* right-side */
+.right-side a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.right-side a:hover{
+    border-bottom: 1px solid blue;
+}
+.right-side article p{
+    margin-top: 15px;
+    font-size: 18px;
+}
+.right-side .text-img{
+    display: flex;
+}
+.right-side .text-img .image-part{
+    margin-left: 15px;
+}
+.right-side .image-part{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.right-side .image-part img{
+    height: 350px;
+    width: 200px;
+    border-bottom: 5px solid salmon;
+}
+.right-side .button button{
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    border: 2px solid skyblue;
+    padding: 10px 30px;
+    margin-top: 10px;
+}
+@media screen and (max-width: 600px){
+    .uk-studying{
+        flex-direction: column;
+    }
+    .location-body{
+        box-sizing: border-box;
+    }
+}
+
+/* down */
+.down{
+    background-color: rgb(34, 111, 178, 0.5);
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.down p{
+    background-color: black;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+footer .first{
+    align-content: center;
+    text-align: center;
+}
+footer .first span{
+    font-size: 40px;
+    border-right: 2px solid gray;
+}
+footer .second{
+    margin-top: 30px;
+}
+footer .third{
+    margin-top: 30px;
+}footer .fourth{
+    margin-top: 30px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    transition: .5s;
+    border-bottom: 1px solid rgb(blue);
+    
+}
+@media screen and (max-width: 768px){
+    footer .first span{
+        font-size: 25px;
+    }
+    footer .first p{
+        font-size: 15px;
+    }
+    footer h4{
+        font-size: 15px;
+    }
+    footer .second,.third,.fourth{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 500px){
+    footer{
+        grid-template-columns: auto auto;
+    }
+    footer .third{
+        margin-left: 40px;
+    }
+}
